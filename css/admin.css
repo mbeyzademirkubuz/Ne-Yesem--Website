@@ -1,0 +1,170 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 102%;
+    
+}
+
+.wrapper {
+    
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.tbl-full{
+    width: 100%;
+}
+
+.tbl-30{
+    width: 30%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%; /*satır genişliği bırakma*/
+}
+
+.btn-primary{
+    background-color: #D6A2E8;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.btn-primary:hover{  /*fare butonun üzerine gelince*/
+    background-color: #82589F;
+}
+
+.btn-secondary{
+    background-color: #D6A2E8;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.btn-secondary:hover{  /*fare butonun üzerine gelince*/
+    background-color: #82589F;
+}
+
+.btn-danger{
+    background-color: #D6A2E8;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.btn-danger:hover{  /*fare butonun üzerine gelince*/
+    background-color: #82589F;
+}
+
+.success{
+    color: #2ed573;
+    font-weight: bold;
+}
+
+.error{
+    color: #ff4757;
+    font-weight: bold;
+}
+
+
+
+/*CSS FOR MENU */
+.menu{
+    border-bottom: 1px solid grey;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color:#80489C ;
+
+}
+
+.menu ul li a:hover{
+    color: #80489C;
+}
+
+/*CSS FOR MAIN-CONTENT */
+
+.main-content{
+    background-color: #D6E4E5;
+    padding: 3% 0;
+}
+
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+/*CSS FOR FOOTER*/
+
+.footer{
+    background-color: #80489C;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*CSS FOR LOGIN*/
+  
+ 
+
+
+.login{
+    border: 1px solid black;
+    width: 30%;
+    margin: 10% auto;
+    padding: 2%;
+    font-size: 200%;
+    box-shadow: 10px 20px #888888;
+    
+    
+    
+}
+
+.signup{
+    border: 1px solid black;
+    width: 30%;
+    margin: 10% auto;
+    padding: 2%;
+    font-size: 100%;
+    box-shadow: 10px 20px #888888;
+    
+    
+    
+}
