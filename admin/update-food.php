@@ -29,7 +29,7 @@
 <div class="main-content">
     
     <div class="wrapper">
-        <h1>Yemek Güncelleme Ekranı</h1>
+        <h1 style="font-size: 50px;">Yemek Güncelleme Ekranı</h1>
 
         <br><br>
 
@@ -37,26 +37,26 @@
 
             <table class="tbl-30">
                 <tr>
-                    <td>Title:</td>
+                    <td>Yemek Adı:</td>
                     <td>
                         <input type="text" name="title" value= "<?php  echo $title?>">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Description:</td>
+                    <td>İçerik:</td>
                     <td>
                         <textarea name="description" cols="30" rows="5"><?php  echo $description?></textarea>
                     </td>
                 </tr>
                 <tr>
-                    <td>Price:</td>
+                    <td>Ücret:</td>
                     <td>
                         <input type="number" name="price" value="<?php  echo $price ?>">
                     </td>
                 </tr>
                 <tr>
-                    <td>Current Image:</td>
+                    <td>Yemek Fotoğraf:</td>
                     <td>
                         <?php
 
@@ -74,14 +74,14 @@
                 </tr>
 
                 <tr>
-                    <td>Select New Image:</td>
+                    <td>Resim Seç:</td>
                     <td>
                         <input type="file" name="image">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Category:</td>
+                    <td>Kategori:</td>
                     <td>
                         <select name="category">
 
@@ -120,14 +120,14 @@
                 </tr>
 
                 <tr>
-                    <td>Featured:</td>
+                    <td>Öne Çıkan:</td>
                     <td>
                         <input <?php if($featured== "Yes"){echo "checked";}?> type="radio" name="featured" value = "Yes">Yes
                         <input <?php if($featured== "No"){echo "checked";}?> type="radio" name="featured" value = "No">No
                     </td>
                 </tr>
                 <tr>
-                    <td>Active:</td>
+                    <td>Aktif:</td>
                     <td>
                         <input <?php if($featured== "Yes"){echo "checked";}?> type="radio" name="active" value = "Yes">Yes
                         <input <?php if($featured== "No"){echo "checked";}?> type="radio" name="active" value = "No">No
@@ -138,7 +138,7 @@
                     <td>
                         <input type="hidden" name="id" value = "<?php echo $id; ?>">
                         <input type="hidden" name="current_image" value = "<?php echo $current_image; ?>">
-                        <input type="submit" name="submit" value = "Update Food" class="btn-secondary">
+                        <input type="submit" name="submit" value = "  Güncelle  " class="btn-secondary">
                     </td>
                 </tr>
 
@@ -218,7 +218,7 @@
                 $res3 = mysqli_query($conn, $sql3);  //sql sorgusu execute edilir.
                 if($res3== true){
                     $_SESSION['update'] = "<div class= 'success'> Yemek başarıyla güncellenmiştir.</div>";
-                    header('location:'.SITEURL.'admin/manage-food.php'); //yemek güncellendikten sonra yemek yönetim sayfasına gider.
+                    //header('location:'.SITEURL.'admin/manage-food.php'); //yemek güncellendikten sonra yemek yönetim sayfasına gider.
                     
                 }
                 else{

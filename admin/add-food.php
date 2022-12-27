@@ -2,7 +2,7 @@
 
 <div class="main-content">
     <div class="wrapper">
-        <h1>Yemek Ekle</h1>
+        <h1 style="font-size: 50px;">Yemek Ekle</h1>
 
         <br><br>
 
@@ -18,35 +18,35 @@
             <table class="tbl-30">
 
                 <tr>
-                    <td>Title: </td>
+                    <td>Yemek Adı: </td>
                     <td>
-                        <input type="text" name="title" placeholder="Title of the Food">
+                        <input type="text" name="title" placeholder="Yemek Adı">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Description: </td>
+                    <td>İçerik: </td>
                     <td>
-                        <textarea name="description" cols="30" rows="5" placeholder="Description of the Food."></textarea>
+                        <textarea name="description" cols="30" rows="5" placeholder="Yemeğin İçeriği."></textarea>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Price: </td>
+                    <td>Ücret: </td>
                     <td>
                         <input type="number" name="price">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Select Image: </td>
+                    <td>Fotoğraf Seç: </td>
                     <td>
                         <input type="file" name="image">
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Category: </td>
+                    <td>Kategori: </td>
                     <td>
                         <select name="category">
 
@@ -82,7 +82,7 @@
                 </tr>
 
                 <tr>
-                    <td>Featured: </td>
+                    <td>Öne Çıkan: </td>
                     <td>
                         <input type="radio" name="featured" value="Yes">Yes
                         <input type="radio" name="featured" value=""No> No
@@ -90,7 +90,7 @@
                 </tr>
 
                 <tr>
-                    <td>Active: </td>
+                    <td>Aktif: </td>
                     <td>
                         <input type="radio" name="active" value="Yes">Yes
                         <input type="radio" name="active" value=""No> No
@@ -99,7 +99,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Food" class="btn-secondary">
+                        <input type="submit" name="submit" value="Yemek Ekle   " class="btn-secondary">
                     </td>
                 </tr>
 

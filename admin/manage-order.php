@@ -77,7 +77,7 @@
 
                             <?php
                                 if($durum=="Ordered"){
-                                    echo "<label style='color: yellow;'>$durum</label>";
+                                    echo "<label style='color: blue;'>$durum</label>";
                                 }
                                 elseif($durum=="On Delivery"){
                                     echo "<label style='color: orange;'>$durum</label>";
@@ -97,7 +97,7 @@
                         <td><?php echo $customer_email; ?></td>
                         <td><?php echo $customer_address; ?></td>
                         <td>
-                            <a href="<?php echo SITEURL; ?>admin/update-order.php?id=<?php echo $id; ?>" class="btn-secondary">Siparişi Güncelle</a>
+                            <a href="<?php echo SITEURL; ?>admin/update-order.php?id=<?php echo $id; ?>" class="btn-secondary">Güncelle </a>
                         </td>
 
                     </tr>

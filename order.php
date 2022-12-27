@@ -95,17 +95,7 @@
                     <div class="order-label">ID</div>
                     <input type="text" name="customer_id" placeholder="1" class="input-responsive" >
 
-                    <div class="order-label">Full Name</div>
-                    <input type="text" name="full-name" placeholder="Mürüvvet Demirkubuz" class="input-responsive">
-
-                    <div class="order-label">Phone Number</div>
-                    <input type="tel" name="contact" placeholder="553 446 75 44" class="input-responsive">
-
-                    <div class="order-label">Email</div>
-                    <input type="email" name="email" placeholder="beyzademirkubuz@gmail.com" class="input-responsive" >
-
-                    <div class="order-label">Address</div>
-                    <textarea name="address" rows="10" placeholder="Yedişehitler Mah. 2940 Sokak No:10 Kat:1" class="input-responsive" ></textarea>
+                    
 
                     <input type="submit" name="submit" value="Siparişi Onayla" class="btn btn-primary">
                 </fieldset>
@@ -124,10 +114,11 @@
                     $durum= "Ordered";
                     //$status_col ='status';
                     $customer_id = $_POST['customer_id'];
-                    $customer_name = $_POST['full-name'];
+                    
+                    /*$customer_name = $_POST['full-name'];
                     $customer_contact = $_POST['contact'];
                     $customer_email = $_POST['email'];
-                    $customer_address = $_POST['address'];
+                    $customer_address = $_POST['address'];*/
 
                     $sql3= "INSERT INTO tbl_order (food, price, qty, total, order_date, durum, customer_id) VALUES 
                         ('$food',

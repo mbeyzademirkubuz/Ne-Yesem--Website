@@ -2,7 +2,7 @@
 
 <div class= "main-content"> 
     <div class="wrapper"> 
-        <h1>Siparişi Güncelle</h1>
+        <h1 style="font-size: 50px;">Siparişi Güncelle</h1>
         <br><br>
 
         <?php
@@ -12,7 +12,8 @@
 
                 //$sql= "SELECT * FROM tbl_order WHERE id= $id";
                 
-                $sql= "SELECT * FROM tbl_order t1 LEFT JOIN tbl_customer t2 ON t1.customer_id = t2.id UNION SELECT * FROM tbl_order t1 LEFT JOIN tbl_customer t2 ON t1.customer_id = t2.id";
+                $sql= "SELECT t1.id, t1.food, t1.price, t1.qty, t1.total, t1.order_date, t1.durum, t1.customer_id, t2.customer_name, t2.customer_contact, t2.customer_email, t2.customer_address
+                FROM tbl_order t1 JOIN tbl_customer t2 ON t1.customer_id= t2.id";
 
                 $res= mysqli_query($conn, $sql);
 
@@ -45,24 +46,24 @@
 
             <table class= "tbl-30">
             <tr>
-                <td>Food Name: </td>
+                <td>Yemek Adı: </td>
                 <td><b><?php echo $food; ?></b></td>
 
             </tr>
             <tr>
-                <td>Price</td>
+                <td>Ücret: </td>
                 <td>
                     <b><?php echo $price; ?>TL</b>
                 </td>
             </tr>
             <tr>
-                <td>Qty: </td>
+                <td>Adet: </td>
                 <td>
                     <input type="number" name="qty" value="<?php echo $qty; ?>">
                 </td>
             </tr>
             <tr>
-                <td>Status: </td>
+                <td>Durum: </td>
                 <td>
                     <select name="durum">
                         <option <?php if($durum=="Ordered"){echo " selected";} ?> value="Ordered">Sipariş Verildi.</option>
@@ -73,7 +74,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Customer ID: </td>
+                <td>Müşteri ID: </td>
                 <td>
                     <input type="text" name="customer_id" value="<?php echo $customer_id; ?>">
                 </td>
@@ -82,28 +83,28 @@
 
 
             <tr>
-                <td>Customer Name: </td>
+                <td>Müşteri Adı: </td>
                 <td>
                     <input type="text" name="customer_name" value="<?php echo $customer_name; ?>">
                 </td>
                     
             </tr>
             <tr>
-                <td>Customer Contact: </td>
+                <td>Telefon Numarası: </td>
                 <td>
                     <input type="text" name="customer_contact" value="<?php echo $customer_contact; ?>">
                 </td>
                     
             </tr>
             <tr>
-                <td>Customer Email: </td>
+                <td>Email: </td>
                 <td>
                     <input type="text" name="customer_email" value="<?php echo $customer_email; ?>">
                 </td>
                     
             </tr>
             <tr>
-                <td>Customer Address: </td>
+                <td>Adres: </td>
                 <td>
                     <textarea name="customer_address" cols="30" rows="5"><?php echo $customer_address; ?></textarea>
                 </td>

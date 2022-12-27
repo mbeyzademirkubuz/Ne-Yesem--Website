@@ -31,7 +31,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Password: </td>
+                    <td>Password:</td>
                     <td>
                         <input type="password" name= "password" placeholder="Şifrenizi giriniz.">
                     </td>

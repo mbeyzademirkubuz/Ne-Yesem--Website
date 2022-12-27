@@ -2,7 +2,9 @@
 
 <div class="main-content">
     <div class= "wrapper">
-        <h1>Change Password</h1>
+        <h1 style="font-size: 50px;">Şifre Değiştir</h1>
+
+        <br><br><br>
 
         <?php 
             if(isset($_GET['id'])){
@@ -37,7 +39,7 @@
                 <tr>
                     <td colspan="2">
                         <input type="hidden" name="id" value="<?php echo $id; ?>">
-                        <input type="submit" name="submit" value="Change Password" class="btn-secondary">
+                        <input type="submit" name="submit" value="Şifre Değiştir" class="btn-secondary">
                     </td>
                 </tr>
 

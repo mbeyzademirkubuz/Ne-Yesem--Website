@@ -27,19 +27,19 @@
                 <tr>
                     <td style="font-size:70%">Telefon Numarası </td>
                     <td>
-                        <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required size="50" style="height: 30px; font-size:10pt">
+                        <input class= "text-center" type="tel" name="contact" placeholder="553 446 75 44" class="input-responsive" required size="50" style="height: 30px; font-size:10pt">
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size:70%">Email: </td>
                     <td>
-                        <input class= "text-center" type="email" name="email" placeholder="E.g. hi@vijaythapa.com" class="input-responsive" required size="50" style="height: 30px; font-size:10pt">
+                        <input class= "text-center" type="email" name="email" placeholder="beyzademirkubuz8@gmail.com" class="input-responsive" required size="50" style="height: 30px; font-size:10pt">
                     </td>
                 </tr>
                 <tr>
                     <td style="font-size:70%">Adres: </td>
                     <td>
-                        <textarea class= "text-center" name="address" rows="30" placeholder="E.g. Street, City, Country" class="input-responsive" size="50" style="height: 50px; width:385px; font-size:10pt" required></textarea>
+                        <textarea class= "text-center" name="address" rows="30" placeholder="Mahalle, Cadde, Sokak ve Apartman." class="input-responsive" size="50" style="height: 50px; width:385px; font-size:10pt" required></textarea>
                     </td>
                 </tr>
                 <tr>

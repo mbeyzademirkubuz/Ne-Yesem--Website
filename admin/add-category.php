@@ -2,7 +2,7 @@
 
 <div class="main-conten">
     <div class="wrapper">
-        <h1>Add Category</h1>
+        <h1 style="font-size: 50px;">Kategori Ekle</h1>
 
         <br><br>
 
@@ -25,9 +25,9 @@
             <table class="tbl-30">
                 
                 <tr>
-                    <td>Title: </td>
+                    <td>Kategori Adı: </td>
                     <td>
-                        <input type="text" name="title" placeholder="Category Title">
+                        <input type="text" name="title" placeholder="Kategori Adı">
                     </td>
                 </tr>
                 <tr>
@@ -57,7 +57,7 @@
 
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="Add Category" class="btn-secondary">
+                        <input type="submit" name="submit" value="Kategori Ekle" class="btn-secondary">
                     </td>
                         
                 </tr>

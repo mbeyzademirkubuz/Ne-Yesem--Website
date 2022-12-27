@@ -2,7 +2,7 @@
 
 <div class= "main-content"> 
     <div class="wrapper"> 
-        <h1>Update Category</h1>
+        <h1 style="font-size: 50px;">Kategori Güncelle</h1>
         <br><br>
 
         <?php
@@ -36,14 +36,14 @@
         <form action="" method ="POST" enctype ="multipart/form-data">
         <table class="tbl-30">
             <tr>
-                <td>Title: </td>
+                <td>Yemek Adı: </td>
                 <td>
                     <input type="text" name="title" value="<?php echo $title; ?>">
                 </td>
             </tr>
 
             <tr>
-                <td>Current Image: </td>
+                <td>Yemek Fotoğraf: </td>
                 <td>
                     <?php 
                         if($current_image!= ""){
@@ -59,14 +59,14 @@
                 </td>
             </tr>
             <tr>
-                <td>New Image: </td>
+                <td>Yeni Fotoğraf: </td>
                 <td>
                 <input type="file" name="image">
                 </td>
             </tr>
 
             <tr>
-                <td>Featured:</td>
+                <td>Öne Çıkan:</td>
                 <td>
                      <input <?php if($featured== "Yes"){echo "checked";}?> type="radio" name="featured" value="Yes">Yes
 
@@ -76,7 +76,7 @@
             </tr>
 
             <tr>
-                <td>Active:</td>
+                <td>Aktif:</td>
                 <td>
                      <input <?php if($featured== "Yes"){echo "checked";}?> type="radio" name="active" value="Yes">Yes
 
@@ -89,7 +89,7 @@
                 <td>
                     <input type="hidden" name="current_image" value="<?php echo $current_image; ?>">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
-                    <input type="submit" name="submit" value="Update Category" class="btn-secondary">
+                    <input type="submit" name="submit" value="Güncelle" class="btn-secondary">
                 </td>
             </tr>
 

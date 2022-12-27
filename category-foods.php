@@ -28,7 +28,7 @@
     <!-- fOOD MEnu Section Starts Here -->
     <section class="food-menu">
         <div class="container">
-            <h2 class="text-center">Food Menu</h2>
+            <h2 class="text-center">Menü</h2>
 
             <?php
                 $sql2= "SELECT * FROM tbl_foo WHERE category_id=$category_id";

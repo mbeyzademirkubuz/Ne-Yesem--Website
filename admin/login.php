@@ -63,14 +63,14 @@
 
         if($count==1)
         {
-            $_SESSION['login'] = "<div class='success text-center'>Login Succesfull.</div>";
+            $_SESSION['login'] = "<div class='success text-center'>Giriş Başarılı.</div>";
             $_SESSION['user'] = $username;
             header('location:'.SITEURL.'admin/index.php');
 
         }
         else
         {
-            $_SESSION['login'] = "<div class='error text-center'>Username or Password did not match.</div>";
+            $_SESSION['login'] = "<div class='error text-center'>Kullanıcı adı veya şifre yanlıştır.</div>";
             header('location:'.SITEURL.'admin/login.php');
 
         }
